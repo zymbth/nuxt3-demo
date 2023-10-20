@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Child Page</h1>
+    <h1>Another Child Page</h1>
     <button>
       <NuxtLink to="/parent">Parent</NuxtLink>
     </button>
