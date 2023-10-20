@@ -3,7 +3,7 @@
     <h1>Home page</h1>
     <nav>
       <ul>
-        <li><NuxtLink to="/about">About</NuxtLink></li>
+        <li><NuxtLink to="/about">About</NuxtLink> <JumpComp path="about"/></li>
         <li><NuxtLink to="/users">Users</NuxtLink></li>
         <li><NuxtLink to="/users-admin">Users-Group</NuxtLink></li>
         <ul>
@@ -22,12 +22,16 @@
   </div>
 </template>
 <script setup>
+// import { useRouter } from 'nuxt/app'
+// const router = useRouter()
+// console.log('routes: ', router.options.routes)
 const handleProgrammaticNavigation = () => {
   const group = Math.floor(Math.random() * 90000 + 10000).toString(16)
   const id = Math.floor(Math.random() * 900 + 100)
+  // navigateTo({ path: `/users-${group}/${id}` })
   navigateTo({
-    path: `/users-${group}/${id}`,
-    // query: { name: 'abc' }
+    name: 'users-group-id',
+    params: { group, id }
   })
 }
 </script>

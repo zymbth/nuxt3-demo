@@ -1,5 +1,5 @@
 <template>
-  <h1>User group index page</h1>
+  <h1>Users group index page</h1>
   <h2>Dynamic Routes</h2>
   <p>$route.params.group: {{ $route.params.group }}</p>
   <BackHome />
