@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Parent Page</h1>
+    <h1>Parent page</h1>
     <h2>Nested Routes</h2>
     <ul>
       <li><NuxtLink to="/parent/child">Parent/child</NuxtLink></li>
