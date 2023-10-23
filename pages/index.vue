@@ -3,6 +3,7 @@
     <h1>Home page</h1>
     <nav>
       <ul>
+        <li><NuxtLink to="/home">Home</NuxtLink></li>
         <li><NuxtLink to="/about">About</NuxtLink> <JumpComp path="about"/></li>
         <li><NuxtLink to="/users">Users</NuxtLink></li>
         <li><NuxtLink to="/users-admin">Users-Group</NuxtLink></li>
