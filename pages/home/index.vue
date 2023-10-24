@@ -1,12 +1,12 @@
 <script setup>
-import { Stars } from './stars.js'
-import { imageParticle } from './img-particle-static'
+// import { Stars } from './stars.js'
+// import { imageParticle } from './img-particle-static'
 
 onMounted(() => {
   // func('abc')
   // console.log('dotList', dotList.length)
   Stars.init('stars', 1000)
-  imageParticle('avatar')
+  useParticleImage('avatar')
 })
 </script>
 <template>
@@ -27,7 +27,8 @@ onMounted(() => {
             >Explore my blog</a
           >
           <!-- <a class="link color-green" href="javascript:void;" target="_blank">Tell me a secret</a> -->
-          <a class="link color-red" href="/resume" target="_blank">View my resume</a>
+          <!-- <a class="link color-red" href="/resume" target="_blank">View my resume</a> -->
+          <a class="link color-red" href="http://ymzhao.work/resume" target="_blank">View my resume</a>
         </div>
         <div class="footer-links color-yellow">
           <a class="link" href="https://github.com/zymbth" target="_blank">GitHub</a>

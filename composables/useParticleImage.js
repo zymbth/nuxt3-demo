@@ -1,6 +1,6 @@
-import dotList from './dots'
+import dotList from '@/assets/dots'
 
-export const imageParticle = (canvasId) => {
+export default (canvasId) => {
   let dots = [], // 粒子
   scale = 1,     // 放大尺寸
   precision = 4, // 精度
